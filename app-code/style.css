@@ -18,6 +18,7 @@ body {
     margin: 0 auto;
     min-height: 100vh;
     align-items: center;
+    background-color: #F6F8FF;
 }
 
 header {
@@ -56,4 +57,50 @@ header {
 .modo>img {
     width: 2.0rem;
     height: 2.0rem;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    width: 327px;
+    height: 60px;
+    background-color: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    border-radius: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.search>img {
+    width: 20.05px;
+    height: 20px;
+}
+
+.search>input {
+    width: 184px;
+    height: 25px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: 'Space Mono';
+    line-height: 2.5rem;
+    color: #4B6A9B;
+    outline: none;
+    border: none;
+    margin-left: 11.32px;
+    margin-right: 7px;
+}
+
+.search>button {
+    width: 84px;
+    height: 46px;
+    background: #0079FF;
+    border-radius: 10px;
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
 }
