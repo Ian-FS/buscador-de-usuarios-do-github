@@ -123,13 +123,13 @@ header {
     width: 233px;
     height: 70px;
     margin: 32px 70px 33px 24px;
+    gap: 19px;
 }
 
 .user img {
     width: 70px;
     height: 70px;
     border-radius: 35px;
-    margin-right: 19px;
 }
 
 .info {
@@ -165,5 +165,19 @@ header {
     line-height: 19px;
     text-align: left;
     color: #697C9A;
+}
 
+.bibliography {
+    width: 279px;
+    height: 75px;
+    margin: 35px 24px 26px 24px;
+}
+
+.bibliography>p {
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 25px;
+    color: #4B6A9B;
 }

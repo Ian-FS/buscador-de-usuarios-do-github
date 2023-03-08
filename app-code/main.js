@@ -1,8 +1,9 @@
 let imgUser = document.querySelector("#img-user");
 let infoUser = document.querySelector(".info");
 let bibliography = document.querySelector(".bibliography");
+console.log(bibliography);
 
-fetch("https://api.github.com/users/octocat")
+fetch("https://api.github.com/users/ian-fs")
   .then((res) => res.json())
   .then((data) => {
     //adiciona imagem do usuario
@@ -35,4 +36,9 @@ fetch("https://api.github.com/users/octocat")
     infoUser.children[2].innerHTML = `Joined ${dataFormatada}`;
 
     //adiciona bibliografia
+    if (data.bio === null) {
+      bibliography.children[0].innerHTML = "Este perfil não tem biografia.";
+    } else {
+      bibliography.children[0].innerHTML = data.bio;
+    }
   });
