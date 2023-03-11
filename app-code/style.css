@@ -169,7 +169,8 @@ header {
 
 .bibliography {
     width: 279px;
-    height: 75px;
+    min-height: 75px;
+    height: auto;
     margin: 35px 24px 26px 24px;
 }
 
@@ -190,6 +191,46 @@ header {
     background-color: #F6F8FF;
     margin: 26px 25px 21px 23px;
     border-radius: 10px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+}
+
+.box-info h2 {
+    font-family: Space Mono;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    color: #4B6A9B;
+}
+
+.box-info p {
+    font-family: Space Mono;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    color: #2B3442;
+
+}
+
+.repos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.followers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.following {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
 }

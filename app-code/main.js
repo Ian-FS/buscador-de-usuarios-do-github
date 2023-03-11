@@ -1,6 +1,10 @@
 let imgUser = document.querySelector("#img-user");
 let infoUser = document.querySelector(".info");
 let bibliography = document.querySelector(".bibliography");
+let repositorios = document.querySelector(".repos");
+let followers = document.querySelector(".followers");
+let following = document.querySelector(".following");
+// console.log(repositorios.children[1].innerHTML='7');
 
 fetch(`https://api.github.com/users/octocat`)
   .then((res) => res.json())
@@ -40,6 +44,10 @@ fetch(`https://api.github.com/users/octocat`)
     } else {
       bibliography.children[0].innerHTML = data.bio;
     }
+    //adiciona outras informações
+    repositorios.children[1].innerHTML = data.public_repos;
+    followers.children[1].innerHTML = data.followers;
+    following.children[1].innerHTML = data.following;
   });
 
 function pesquisar() {
@@ -81,11 +89,16 @@ function pesquisar() {
         date.getFullYear();
       infoUser.children[2].innerHTML = `Joined ${dataFormatada}`;
 
-      //adiciona bibliografia
+      //adiciona biografia
       if (data.bio === null) {
         bibliography.children[0].innerHTML = "Este perfil não tem biografia.";
       } else {
         bibliography.children[0].innerHTML = data.bio;
       }
+
+      //adiciona informações do box
+      repositorios.children[1].innerHTML = data.public_repos;
+      followers.children[1].innerHTML = data.followers;
+      following.children[1].innerHTML = data.following;
     });
 }
