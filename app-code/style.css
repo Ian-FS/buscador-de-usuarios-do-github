@@ -181,3 +181,15 @@ header {
     line-height: 25px;
     color: #4B6A9B;
 }
+
+.box-info {
+    display: flex;
+    flex-direction: row;
+    width: 279px;
+    height: 85px;
+    background-color: #F6F8FF;
+    margin: 26px 25px 21px 23px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
