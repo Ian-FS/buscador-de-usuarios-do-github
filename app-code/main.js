@@ -1,4 +1,7 @@
 let imgUser = document.querySelector("#img-user");
+let nameUser = document.querySelector("#name-user");
+let linkUser = document.querySelector("#link-user");
+let dateJoined = document.querySelector("#date-joined");
 let infoUser = document.querySelector(".info");
 let bibliography = document.querySelector(".bibliography");
 let repositorios = document.querySelector(".repos");
@@ -16,10 +19,10 @@ fetch(`https://api.github.com/users/octocat`)
     imgUser.src = data.avatar_url;
 
     //adciona nome do usario
-    infoUser.children[0].innerHTML = data.name;
+    nameUser.innerHTML = data.name;
 
     //adiciona link, caso tenha, ou nome com @
-    infoUser.children[1].innerHTML = `@${data.login}`;
+    linkUser.innerHTML = `@${data.login}`;
 
     //adiciona data de criação de conta
     const meses = [
@@ -39,7 +42,7 @@ fetch(`https://api.github.com/users/octocat`)
     let date = new Date(data.created_at);
     let dataFormatada =
       date.getDate() + " " + meses[date.getMonth()] + " " + date.getFullYear();
-    infoUser.children[2].innerHTML = `Joined ${dataFormatada}`;
+    dateJoined.innerHTML = `Joined ${dataFormatada}`;
 
     //adiciona bibliografia
     if (data.bio === null) {
@@ -67,10 +70,10 @@ function pesquisar() {
       imgUser.src = data.avatar_url;
 
       //adciona nome do usario
-      infoUser.children[0].innerHTML = data.name;
+      nameUser.innerHTML = data.name;
 
       //adiciona link, caso tenha, ou nome com @
-      infoUser.children[1].innerHTML = `@${data.login}`;
+      linkUser.innerHTML = `@${data.login}`;
 
       //adiciona data de criação de conta
       const meses = [
@@ -94,7 +97,7 @@ function pesquisar() {
         meses[date.getMonth()] +
         " " +
         date.getFullYear();
-      infoUser.children[2].innerHTML = `Joined ${dataFormatada}`;
+      dateJoined.innerHTML = `Joined ${dataFormatada}`;
 
       //adiciona biografia
       if (data.bio === null) {
