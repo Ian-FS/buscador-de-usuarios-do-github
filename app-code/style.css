@@ -112,19 +112,68 @@ main {
     margin: 0.95rem 1rem 0.95rem 0;
 }
 
-.container {}
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto;
+    max-width: 730px;
+    width: 100%;
+    background: #FEFEFE;
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+    border-radius: 15px;
+
+}
 
 .user {}
 
-.user img {}
+.container>img {
+    max-width: 117px;
+    max-height: 117px;
+    width: 100%;
+    height: 100%;
+    border-radius: 58.5px;
+    grid-row: 1/4;
+    margin-left: 5.8rem;
+    margin-right: 3.7rem;
+    margin-top: 4.7rem;
+}
 
-.info {}
+.info {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-top: 1.3rem;
+}
 
-.info>h2 {}
+.user>h2 {
+    font-family: Space Mono;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 3.9rem;
+    text-align: left;
+    color: #2B3442;
 
-.info>a {}
+}
 
-.info>p {}
+.user>a {
+    font-family: Space Mono;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-align: left;
+    color: #0079FF;
+}
+
+.info>p {
+    font-family: Space Mono;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    text-align: right;
+    color: #697C9A;
+    margin: 3.8rem;
+
+}
 
 .bibliography {}
 
