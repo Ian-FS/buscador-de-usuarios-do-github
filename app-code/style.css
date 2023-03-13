@@ -13,224 +13,135 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    width: 375px;
-    height: 777px;
+    width: 1440px;
+    height: 900px;
     margin: 0 auto;
     min-height: 100vh;
     align-items: center;
+    justify-content: center;
     background-color: #F6F8FF;
 }
 
 header {
     display: flex;
-    flex-direction: row;
-    width: 327px;
-    height: 38px;
+    max-width: 730px;
+    width: 100%;
     justify-content: space-between;
-    margin: 31px 24px 36px 24px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin-bottom: 3.6rem;
 }
 
 .logo {
+    font-family: Space Mono;
     font-size: 2.6rem;
     font-weight: 700;
-    font-family: 'Space Mono';
-    color: #222731;
+    line-height: 3.9rem;
+    text-align: left;
+
 }
 
 .modo {
     display: flex;
-    flex-direction: row;
-    gap: 16px;
     align-items: center;
-    color: #4B6A9B;
-    ;
-
+    gap: 1.6rem;
 }
 
 .modo>h2 {
+    font-family: Space Mono;
     font-size: 1.3rem;
     font-weight: 700;
-    font-family: 'Space Mono';
+    line-height: 1.9rem;
     letter-spacing: 0.25rem;
+    text-align: right;
 }
 
-.modo>img {
-    width: 2.0rem;
-    height: 2.0rem;
+.modo>img {}
+
+main {
+    max-width: 730px;
+    width: 100%;
 }
 
 .search {
     display: flex;
-    flex-direction: row;
-    width: 327px;
-    height: 60px;
+    width: 100%;
     background-color: #FEFEFE;
     box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
     border-radius: 15px;
+    margin-bottom: 2.4rem;
     align-items: center;
-    justify-content: center;
-    margin: 0 24px;
 }
 
 .search>img {
-    width: 20.05px;
-    height: 20px;
+    max-width: 24.06px;
+    max-height: 24px;
+    width: 100%;
+    height: 100%;
+    margin: 2.2rem 2.3rem 2.2rem 3.2rem;
 }
 
 .search>input {
-    width: 184px;
-    height: 25px;
-    font-size: 1.3rem;
-    font-weight: 400;
-    font-family: 'Space Mono';
-    line-height: 2.5rem;
-    color: #4B6A9B;
+    width: 100%;
     outline: none;
     border: none;
-    margin-left: 11.32px;
-    margin-right: 7px;
+    height: 3.3rem;
+    font-family: Space Mono;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: left;
+
 }
 
 .search>button {
-    width: 84px;
-    height: 46px;
+    display: flex;
+    max-width: 106px;
+    max-height: 50px;
+    width: 100%;
+    height: 5rem;
     background: #0079FF;
     border-radius: 10px;
-    font-family: 'Space Mono';
-    font-style: normal;
+    font-family: Space Mono;
+    font-size: 16px;
     font-weight: 700;
-    font-size: 14px;
-    line-height: 21px;
-    text-align: center;
+    line-height: 24px;
     color: #FFFFFF;
+    text-align: left;
+    justify-content: center;
     border: none;
-}
-
-.container {
-    width: 327px;
-    height: 517px;
-    background: #FEFEFE;
-    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
-    border-radius: 15px;
-    margin: 16px 24px 79px 24px;
-    overflow: auto;
-}
-
-.user {
-    display: flex;
-    flex-direction: row;
-    width: 233px;
-    height: 70px;
-    margin: 32px 70px 33px 24px;
-    gap: 19px;
-}
-
-.user img {
-    width: 70px;
-    height: 70px;
-    border-radius: 35px;
-}
-
-.info {
-    display: flex;
-    flex-direction: column;
-}
-
-.info>h2 {
-    font-family: Space Mono;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: left;
-
-}
-
-.info>a {
-    text-decoration: none;
-    font-family: Space Mono;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 19px;
-    text-align: left;
-    color: #0079FF;
-
-}
-
-.info>p {
-    margin-top: 6px;
-    font-family: Space Mono;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 19px;
-    text-align: left;
-    color: #697C9A;
-}
-
-.bibliography {
-    width: 279px;
-    min-height: 75px;
-    height: auto;
-    margin: 35px 24px 26px 24px;
-}
-
-.bibliography>p {
-    font-family: 'Space Mono';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 13px;
-    line-height: 25px;
-    color: #4B6A9B;
-}
-
-.box-info {
-    display: flex;
-    flex-direction: row;
-    width: 279px;
-    height: 85px;
-    background-color: #F6F8FF;
-    margin: 26px 25px 21px 23px;
-    border-radius: 10px;
-    justify-content: space-around;
     align-items: center;
+    margin: 0.95rem 1rem 0.95rem 0;
 }
 
-.box-info h2 {
-    font-family: Space Mono;
-    font-size: 11px;
-    font-weight: 400;
-    line-height: 16px;
-    text-align: center;
-    color: #4B6A9B;
-}
+.container {}
 
-.box-info p {
-    font-family: Space Mono;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 24px;
-    text-align: center;
-    color: #2B3442;
+.user {}
 
-}
+.user img {}
 
-.repos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-}
+.info {}
 
-.followers {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-}
+.info>h2 {}
 
-.following {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-}
+.info>a {}
+
+.info>p {}
+
+.bibliography {}
+
+.bibliography>p {}
+
+.box-info {}
+
+.box-info h2 {}
+
+.box-info p {}
+
+.repos {}
+
+.followers {}
+
+.following {}
+
+.box-other-info {}
+
+.box-other-info div {}
