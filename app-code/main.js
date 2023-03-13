@@ -4,7 +4,10 @@ let bibliography = document.querySelector(".bibliography");
 let repositorios = document.querySelector(".repos");
 let followers = document.querySelector(".followers");
 let following = document.querySelector(".following");
-// console.log(repositorios.children[1].innerHTML='7');
+let locationUser = document.querySelector(".location-user");
+let blog = document.querySelector(".blog");
+let twitter = document.querySelector(".twitter");
+let company = document.querySelector(".company");
 
 fetch(`https://api.github.com/users/octocat`)
   .then((res) => res.json())
@@ -48,6 +51,10 @@ fetch(`https://api.github.com/users/octocat`)
     repositorios.children[1].innerHTML = data.public_repos;
     followers.children[1].innerHTML = data.followers;
     following.children[1].innerHTML = data.following;
+    locationUser.children[1].innerHTML = data.location;
+    blog.children[1].innerHTML = data.blog;
+    twitter.children[1].innerHTML = data.twitter;
+    company.children[1].innerHTML = data.company;
   });
 
 function pesquisar() {
@@ -100,5 +107,10 @@ function pesquisar() {
       repositorios.children[1].innerHTML = data.public_repos;
       followers.children[1].innerHTML = data.followers;
       following.children[1].innerHTML = data.following;
+
+      locationUser.children[1].innerHTML = data.location;
+      blog.children[1].innerHTML = data.blog;
+      twitter.children[1].innerHTML = data.twitter;
+      company.children[1].innerHTML = data.company;
     });
 }
