@@ -132,7 +132,7 @@ main {
     width: 100%;
     height: 100%;
     border-radius: 58.5px;
-    grid-row: 1/4;
+    grid-row: 1/5;
     margin-left: 5.8rem;
     margin-right: 3.7rem;
     margin-top: 4.7rem;
@@ -141,6 +141,8 @@ main {
 .info {
     display: flex;
     align-items: baseline;
+    max-width: 480px;
+    width: 100%;
     justify-content: space-between;
     margin-top: 1.3rem;
 }
@@ -171,19 +173,54 @@ main {
     line-height: 2.2rem;
     text-align: right;
     color: #697C9A;
-    margin: 3.8rem;
+    margin-top: 3.8rem;
 
 }
 
-.bibliography {}
+.bibliography {
+    max-width: 480px;
+    width: 100%;
+    margin-top: 2rem;
+}
 
-.bibliography>p {}
+.bibliography>p {
+    font-family: Space Mono;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    text-align: left;
+    color: #4B6A9B;
+}
 
-.box-info {}
+.box-info {
+    display: flex;
+    max-width: 455px;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #F6F8FF;
+    border-radius: 10px;
+    margin-top: 3.2rem;
+    justify-content: space-around;
+}
 
-.box-info h2 {}
+.box-info h2 {
+    font-family: Space Mono;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+    text-align: left;
+    color: #4B6A9B;
 
-.box-info p {}
+}
+
+.box-info p {
+    margin-top: 0.1rem;
+    font-family: Space Mono;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 3.3rem;
+    text-align: left;
+}
 
 .repos {}
 
