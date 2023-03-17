@@ -15,14 +15,16 @@
       </div>
     </header>
     <main>
-      <div class="search">
-        <img src="./assets/icon-search.svg" alt="imagem de uma lupa" />
-        <input
-          type="text"
-          name="textinput"
-          id="research-field"
-          placeholder="Search GitHub username…"
-        />
+      <div class="search-container">
+        <div class="search-box">
+          <img src="./assets/icon-search.svg" alt="imagem de uma lupa" />
+          <input
+            type="text"
+            name="textinput"
+            id="research-field"
+            placeholder="Search GitHub username…"
+          />
+        </div>
         <button id="button-search" onclick="search()">Search</button>
       </div>
       <div class="container">
@@ -30,10 +32,10 @@
         <div class="info">
           <div class="user">
             <h2 id="name-user"></h2>
-            <a id="link-user" href=""></a>
           </div>
           <p id="date-joined" class="joined"></p>
         </div>
+        <a class="link-name" id="link-user" href=""></a>
 
         <div class="bibliography">
           <p></p>
