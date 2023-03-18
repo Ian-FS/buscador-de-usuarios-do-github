@@ -13,12 +13,13 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    max-width: 1440px;
+    max-width: 730px;
     max-height: 900px;
-    margin: 0 24px;
+    margin: 0 auto;
     min-height: 100vh;
     justify-content: center;
     background-color: #F6F8FF;
+    padding: 0 24px;
 }
 
 header {
@@ -51,6 +52,7 @@ header {
     line-height: 1.9rem;
     letter-spacing: 0.25rem;
     text-align: right;
+    color: #4B6A9B;
 }
 
 .modo>img {}
@@ -249,6 +251,34 @@ location-user {}
 
 .box-other-info img {
     height: fit-content;
+}
+
+.twitter>a {
+    text-decoration: none;
+    color: #4B6A9B;
+
+}
+
+.twitter>a:hover {
+    text-decoration: underline;
+}
+
+.blog>a {
+    text-decoration: none;
+    color: #4B6A9B;
+}
+
+.blog>a:hover {
+    text-decoration: underline;
+}
+
+.company>a {
+    text-decoration: none;
+    color: #4B6A9B;
+}
+
+.company>a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width:700px) {
