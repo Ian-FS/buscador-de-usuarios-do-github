@@ -7,10 +7,10 @@ const bibliography = document.querySelector(".bibliography");
 const repositories = document.querySelector(".repos");
 const followers = document.querySelector(".followers");
 const following = document.querySelector(".following");
-const locationUser = document.querySelector(".location-user").children[1];
-const blog = document.querySelector(".blog").children[1];
-const twitter = document.querySelector(".twitter").children[1];
-const company = document.querySelector(".company").children[1];
+const locationUser = document.querySelector(".location-user");
+const blog = document.querySelector(".blog");
+const twitter = document.querySelector(".twitter");
+const company = document.querySelector(".company");
 const buttonSearch = document.querySelector("#button-search");
 var researchField = document.querySelector("#research-field");
 
@@ -80,13 +80,13 @@ function search() {
       function verificaOtherbox() {
         listInfo.forEach((item) => {
           if (data[item[0]] == null) {
-            item[1].innerHTML = "Not Available";
+            item[1].children[1].innerHTML = "Not Available";
             item[1].style.textDecoration = "none";
             item[1].style.mixBlendMode = "normal";
             item[1].style.opacity = "0.5";
           } else {
-            item[1].innerHTML = data[item[0]];
-            item[1].href = data[item[0]];
+            item[1].children[1].innerHTML = data[item[0]];
+            item[1].children[1].href = data[item[0]];
           }
         });
       }
