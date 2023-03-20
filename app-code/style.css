@@ -98,7 +98,22 @@ main {
     width: 252px;
 }
 
-.search-container>button {
+.error {
+    font-family: Space Mono;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+    color: #F74646;
+}
+
+.box-button {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+}
+
+.search-container button {
     display: flex;
     max-width: 106px;
     max-height: 50px;
@@ -239,9 +254,6 @@ main {
     justify-content: space-between;
 }
 
-location-user {}
-
-
 .box-other-info div {
     display: flex;
     gap: 1.8rem;
@@ -253,14 +265,12 @@ location-user {}
     height: fit-content;
 }
 
-.twitter>a {
-    text-decoration: none;
+.location-user>p {
     color: #4B6A9B;
-
 }
 
-.twitter>a:hover {
-    text-decoration: underline;
+.twitter>p {
+    color: #4B6A9B;
 }
 
 .blog>a {
@@ -268,17 +278,12 @@ location-user {}
     color: #4B6A9B;
 }
 
-.blog>a:hover {
+.blog:hover {
     text-decoration: underline;
 }
 
 .company>a {
-    text-decoration: none;
     color: #4B6A9B;
-}
-
-.company>a:hover {
-    text-decoration: underline;
 }
 
 @media screen and (max-width:700px) {
