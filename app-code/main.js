@@ -22,7 +22,13 @@ researchField.addEventListener("keypress", (ev) => {
 
 function search() {
   fetch(`https://api.github.com/users/${researchField.value}`)
-    .then((res) => res.json())
+    .then((res) => {
+      if (res.status != "200") {
+        throw Error(res.status);
+      } else {
+        return res.json();
+      }
+    })
     .then((data) => {
       //adiciona imagem do usuario
       imgUser.src = data.avatar_url;
@@ -77,18 +83,27 @@ function search() {
       const listInfo = [locationInfo, blogInfo, twitterInfo, companyInfo];
       verificaOtherbox();
 
+      // aplica opacidade no elemento erro
+      document.querySelector(".error").style.opacity = 0;
+
       function verificaOtherbox() {
         listInfo.forEach((item) => {
-          if (data[item[0]] == null) {
+          if (data[item[0]] == null || data[item[0]] === "") {
             item[1].children[1].innerHTML = "Not Available";
             item[1].style.textDecoration = "none";
-            item[1].style.mixBlendMode = "normal";
             item[1].style.opacity = "0.5";
+            item[1].children[1].style.pointerEvents = "none";
+            item[1].children[1].style.cursor = "default";
           } else {
             item[1].children[1].innerHTML = data[item[0]];
             item[1].children[1].href = data[item[0]];
+            item[1].style.opacity = "1";
           }
         });
       }
+    })
+    .catch((erroStatus) => {
+      console.log(erroStatus);
+      document.querySelector(".error").style.opacity = "100";
     });
 }
