@@ -13,12 +13,29 @@ const twitter = document.querySelector(".twitter");
 const company = document.querySelector(".company");
 const buttonSearch = document.querySelector("#button-search");
 var researchField = document.querySelector("#research-field");
+const tema = document.querySelector("#tema");
 
 researchField.value = "octocat";
 onload = search();
 researchField.addEventListener("keypress", (ev) => {
   if (ev.key === "Enter") search();
 });
+console.log(tema);
+tema.addEventListener("click", alteraTema);
+
+function alteraTema() {
+  if (tema.children[0].innerHTML === "DARK") {
+    tema.children[0].innerHTML = "LIGTH";
+    tema.children[1].src = "./assets/icon-sun.svg";
+    document.querySelector("body").style.backgroundColor = "#141D2F";
+    document.querySelector("#research-field").style.backgroundColor = "#1E2A47";
+    document.querySelector(".search-container").style.backgroundColor =
+      "#1E2A47";
+    document.querySelector(".container").style.backgroundColor = "#1E2A47";
+    document.querySelector(".box-info").style.backgroundColor = "#141D2F";
+  } else {
+  }
+}
 
 function search() {
   fetch(`https://api.github.com/users/${researchField.value}`)
