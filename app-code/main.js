@@ -26,14 +26,72 @@ tema.addEventListener("click", alteraTema);
 function alteraTema() {
   if (tema.children[0].innerHTML === "DARK") {
     tema.children[0].innerHTML = "LIGTH";
+    tema.children[0].style.color = "#FFFFFF";
     tema.children[1].src = "./assets/icon-sun.svg";
+    document.querySelector(".logo").style.color = "#FFFFFF";
     document.querySelector("body").style.backgroundColor = "#141D2F";
     document.querySelector("#research-field").style.backgroundColor = "#1E2A47";
+    document.querySelector("#research-field").style.color = "#FFFFFF";
     document.querySelector(".search-container").style.backgroundColor =
       "#1E2A47";
+    document.querySelector("#name-user").style.color = "#FFFFFF";
+    document.querySelector(".joined").style.color = "#FFFFFF";
+    document.querySelector(".bibliography").children[0].style.color = "#FFFFFF";
     document.querySelector(".container").style.backgroundColor = "#1E2A47";
     document.querySelector(".box-info").style.backgroundColor = "#141D2F";
+    document.querySelector(".box-info").style.color = "#FFFFFF";
+    document.querySelector(".box-info").children[0].children[0].style.color =
+      "#FFFFFF";
+    document.querySelector(".box-info").children[1].children[0].style.color =
+      "#FFFFFF";
+    document.querySelector(".box-info").children[2].children[0].style.color =
+      document.querySelector(".box-other-info").style.color = "#FFFFFF";
+    document.querySelector(
+      ".box-other-info"
+    ).children[0].children[0].style.color = "#FFFFFF";
+    document.querySelector(
+      ".box-other-info"
+    ).children[1].children[0].style.color = "#FFFFFF";
+    document.querySelector(
+      ".box-other-info"
+    ).children[2].children[0].style.color = "#FFFFFF";
+    document.querySelector(
+      ".box-other-info"
+    ).children[3].children[0].style.color = "#FFFFFF";
   } else {
+    tema.children[0].innerHTML = "DARK";
+    tema.children[0].style.color = "#4B6A9B";
+    tema.children[1].src = "./assets/icon-sun.svg";
+    document.querySelector(".logo").style.color = "#4B6A9B";
+    document.querySelector("body").style.backgroundColor = "#141D2F";
+    document.querySelector("#research-field").style.backgroundColor = "#1E2A47";
+    document.querySelector("#research-field").style.color = "#4B6A9B";
+    document.querySelector(".search-container").style.backgroundColor =
+      "#1E2A47";
+    document.querySelector("#name-user").style.color = "#4B6A9B";
+    document.querySelector(".joined").style.color = "#4B6A9B";
+    document.querySelector(".bibliography").children[0].style.color = "#4B6A9B";
+    document.querySelector(".container").style.backgroundColor = "#1E2A47";
+    document.querySelector(".box-info").style.backgroundColor = "#141D2F";
+    document.querySelector(".box-info").style.color = "#4B6A9B";
+    document.querySelector(".box-info").children[0].children[0].style.color =
+      "#4B6A9B";
+    document.querySelector(".box-info").children[1].children[0].style.color =
+      "#4B6A9B";
+    document.querySelector(".box-info").children[2].children[0].style.color =
+      document.querySelector(".box-other-info").style.color = "#4B6A9B";
+    document.querySelector(
+      ".box-other-info"
+    ).children[0].children[0].style.color = "#4B6A9B";
+    document.querySelector(
+      ".box-other-info"
+    ).children[1].children[0].style.color = "#4B6A9B";
+    document.querySelector(
+      ".box-other-info"
+    ).children[2].children[0].style.color = "#4B6A9B";
+    document.querySelector(
+      ".box-other-info"
+    ).children[3].children[0].style.color = "#4B6A9B";
   }
 }
 
