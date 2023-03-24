@@ -51,29 +51,42 @@ function alteraTema() {
     ).children[0].children[0].style.color = "#FFFFFF";
     document.querySelector(
       ".box-other-info"
+    ).children[0].children[0].style.filter = "brightness(4.4)";
+    document.querySelector(
+      ".box-other-info"
     ).children[1].children[0].style.color = "#FFFFFF";
     document.querySelector(
       ".box-other-info"
-    ).children[2].children[0].style.color = "#FFFFFF";
+    ).children[1].children[0].style.filter = "brightness(4.4)";
+    document.querySelector(
+      ".box-other-info"
+    ).children[2].children[1].style.color = "#FFFFFF";
+    document.querySelector(
+      ".box-other-info"
+    ).children[2].children[0].style.filter = "brightness(4.4)";
     document.querySelector(
       ".box-other-info"
     ).children[3].children[0].style.color = "#FFFFFF";
+    document.querySelector(
+      ".box-other-info"
+    ).children[3].children[0].style.filter = "brightness(4.4)";
   } else {
+    tema.dataset.filter = "brightness(100%)";
     tema.children[0].innerHTML = "DARK";
     tema.children[0].style.color = "#4B6A9B";
-    tema.children[1].src = "./assets/icon-sun.svg";
-    document.querySelector(".logo").style.color = "#4B6A9B";
-    document.querySelector("body").style.backgroundColor = "#141D2F";
-    document.querySelector("#research-field").style.backgroundColor = "#1E2A47";
+    tema.children[1].src = "./assets/icon-moon.svg";
+    document.querySelector(".logo").style.color = "#222731";
+    document.querySelector("body").style.backgroundColor = "#F2F2F2";
+    document.querySelector("#research-field").style.backgroundColor = "#FFFFFF";
     document.querySelector("#research-field").style.color = "#4B6A9B";
     document.querySelector(".search-container").style.backgroundColor =
-      "#1E2A47";
+      "#FFFFFF";
     document.querySelector("#name-user").style.color = "#4B6A9B";
     document.querySelector(".joined").style.color = "#4B6A9B";
     document.querySelector(".bibliography").children[0].style.color = "#4B6A9B";
-    document.querySelector(".container").style.backgroundColor = "#1E2A47";
-    document.querySelector(".box-info").style.backgroundColor = "#141D2F";
-    document.querySelector(".box-info").style.color = "#4B6A9B";
+    document.querySelector(".container").style.backgroundColor = "#FFFFFF";
+    document.querySelector(".box-info").style.backgroundColor = "#F6F8FF";
+    document.querySelector(".box-info").style.color = "#2B3442";
     document.querySelector(".box-info").children[0].children[0].style.color =
       "#4B6A9B";
     document.querySelector(".box-info").children[1].children[0].style.color =
@@ -85,13 +98,25 @@ function alteraTema() {
     ).children[0].children[0].style.color = "#4B6A9B";
     document.querySelector(
       ".box-other-info"
+    ).children[0].children[0].style.filter = "brightness(1)";
+    document.querySelector(
+      ".box-other-info"
     ).children[1].children[0].style.color = "#4B6A9B";
     document.querySelector(
       ".box-other-info"
-    ).children[2].children[0].style.color = "#4B6A9B";
+    ).children[1].children[0].style.filter = "brightness(1)";
+    document.querySelector(
+      ".box-other-info"
+    ).children[2].children[1].style.color = "#4B6A9B";
+    document.querySelector(
+      ".box-other-info"
+    ).children[2].children[0].style.filter = "brightness(1)";
     document.querySelector(
       ".box-other-info"
     ).children[3].children[0].style.color = "#4B6A9B";
+    document.querySelector(
+      ".box-other-info"
+    ).children[3].children[0].style.filter = "brightness(1)";
   }
 }
 

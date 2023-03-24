@@ -46,6 +46,10 @@ header {
     cursor: pointer;
 }
 
+.modo:hover {
+    filter: brightness(0);
+}
+
 .modo>h2 {
     font-family: Space Mono;
     font-size: 1.3rem;
