@@ -46,10 +46,6 @@ header {
     cursor: pointer;
 }
 
-.modo:hover {
-    filter: brightness(0);
-}
-
 .modo>h2 {
     font-family: Space Mono;
     font-size: 1.3rem;
@@ -57,10 +53,25 @@ header {
     line-height: 1.9rem;
     letter-spacing: 0.25rem;
     text-align: right;
-    color: #4B6A9B;
 }
 
-.modo>img {}
+.light {
+    color: #697C9A;
+}
+
+.light:hover {}
+
+.dark {
+    color: #FFFFFF;
+}
+
+.dark:hover {
+    filter: invert(74%) sepia(10%) saturate(1243%) hue-rotate(186deg) brightness(88%) contrast(87%);
+}
+
+.img-light {}
+
+.img-dark {}
 
 main {
     max-width: 730px;
