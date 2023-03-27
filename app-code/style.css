@@ -122,7 +122,7 @@ main {
     width: 215px;
 }
 
-.search-container button {
+.button-search {
     display: flex;
     max-width: 106px;
     max-height: 50px;
@@ -139,6 +139,14 @@ main {
     align-items: center;
     padding: 1.25rem 2.3rem 1.35rem 2.4rem;
     cursor: pointer;
+}
+
+.button-search:active {
+    background-color: #60ABFF;
+}
+
+.error-button {
+    background-color: #60ABFF;
 }
 
 .container {

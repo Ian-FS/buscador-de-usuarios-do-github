@@ -18,9 +18,11 @@ const tema = document.querySelector("#tema");
 researchField.value = "octocat";
 onload = search();
 researchField.addEventListener("keypress", (ev) => {
-  if (ev.key === "Enter") search();
+  if (ev.key === "Enter") {
+    search();
+  }
 });
-console.log(tema);
+
 tema.addEventListener("click", alteraTema);
 
 function alteraTema() {
@@ -130,6 +132,9 @@ function search() {
       }
     })
     .then((data) => {
+      //remove uma classe ao botao de pesquisa
+      buttonSearch.classList.remove("error-button");
+
       //adiciona imagem do usuario
       imgUser.src = data.avatar_url;
 
@@ -205,5 +210,6 @@ function search() {
     .catch((erroStatus) => {
       console.log(erroStatus);
       document.querySelector(".error").style.opacity = "100";
+      buttonSearch.classList.add("error-button");
     });
 }
