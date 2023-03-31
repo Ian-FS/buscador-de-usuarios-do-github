@@ -45,16 +45,19 @@ function alteraTema(condition) {
   if (condition) {
     document.getElementById("tema").children[0].classList.remove("dark-h2");
     document.getElementById("icone").classList.remove("dark-icone");
+    blog.classList.remove("light-scrollbar");
     temaDark();
   } else {
     document.getElementById("tema").children[0].classList.remove("light-h2");
     document.getElementById("icone").classList.remove("light-icone");
+    blog.classList.remove("dark-scrollbar");
     temaLight();
   }
 }
 function temaDark() {
   document.getElementById("tema").children[0].classList.add("light-h2");
   document.getElementById("icone").classList.add("light-icone");
+  blog.classList.add("dark-scrollbar");
   tema.children[0].innerHTML = "LIGTH";
   document.querySelector("#icone").children[0].attributes[0].value = sun;
   document.querySelector(".logo").style.color = "#FFFFFF";
@@ -103,6 +106,7 @@ function temaDark() {
 function temaLight() {
   document.getElementById("tema").children[0].classList.add("dark-h2");
   document.getElementById("icone").classList.add("dark-icone");
+  blog.classList.add("light-scrollbar");
   tema.children[0].innerHTML = "DARK";
   document.querySelector("#icone").children[0].attributes[0].value = moon;
   document.querySelector(".logo").style.color = "#222731";

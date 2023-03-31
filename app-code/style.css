@@ -301,6 +301,35 @@ main {
     height: fit-content;
 }
 
+/* Works on Firefox */
+.box-other-info div {
+    scrollbar-width: auto;
+    scrollbar-color: #141D2F #1E2A47;
+}
+
+.box-other-info light-scrollbar {
+    scrollbar-width: auto;
+    scrollbar-color: #F6F8FF #FFFFFF;
+}
+
+/* Works on Chrome, Edge, and Safari */
+.box-other-info div::-webkit-scrollbar {
+    width: 12px;
+}
+
+.dark-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #141D2F;
+    border-radius: 20px;
+    border: 2px solid #1E2A47;
+}
+
+.light-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #F6F8FF;
+    border-radius: 20px;
+    border: 2px solid #FFFFFF;
+}
+
+
 .blog>a {
     text-decoration: none;
     color: #4B6A9B;
