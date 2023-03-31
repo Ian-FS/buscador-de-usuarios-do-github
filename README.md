@@ -26,15 +26,15 @@ O desafio aqui foi criar uma aplicação de pesquisa de usuários do GitHub util
 ### Imagens
 
 ![](./assets/devfinder-dark.png)
-![](./assets/devfinder-dark-noresults.png)
-![](./assets/devfinder-dark-link.png)
-![](./assets/devfinder-dark-tablet.png)
-![](./assets/devfinder-dark-mobile.png)
-![](./assets/devfinder-light.png)
-![](./assets/devfinder-light-noresults.png)
-![](./assets/devfinder-light-tema.png)
-![](./assets/devfinder-light-tablet.png)
-![](./assets/devfinder-light-mobile.png)
+![](./app-code/assets/devfinder-dark-noresults.png)
+![](./app-code/assets/devfinder-dark-link.png)
+![](./app-code/assets/devfinder-dark-tablet.png)
+![](./app-code/assets/devfinder-dark-mobile.png)
+![](./app-code/assets/devfinder-light.png)
+![](./app-code/assets/devfinder-light-noresults.png)
+![](./app-code/assets/devfinder-light-tema.png)
+![](./app-code/assets/devfinder-light-tablet.png)
+![](./app-code/assets/devfinder-light-mobile.png)
 
 ### Links
 https://buscadordeusuarios-github.vercel.app/
