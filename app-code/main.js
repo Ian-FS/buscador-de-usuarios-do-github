@@ -236,10 +236,12 @@ function search() {
           }
         });
       }
+      researchField.value = "";
     })
     .catch((erroStatus) => {
       console.log(erroStatus);
       document.querySelector(".error").style.opacity = "100";
       buttonSearch.classList.add("error-button");
+      researchField.value = "";
     });
 }
